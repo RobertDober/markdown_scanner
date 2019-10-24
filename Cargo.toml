@@ -3,7 +3,10 @@ name = "markdown_scanner"
 version = "0.1.0"
 authors = ["RobertDober <robert.dober@gmail.com>"]
 edition = "2018"
+publish = false # ... for now
+license = "Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# SPDX-License-Identifier: Apache-2.0
