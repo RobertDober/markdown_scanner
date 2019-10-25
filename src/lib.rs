@@ -4,10 +4,11 @@ mod version;
 
 #[cfg(test)]
 mod tests {
+    use super::*;
 
     #[test]
     fn my_test() {
-        assert_eq!(vsn(), "0.0.1")
+        assert_eq!(version(), "0.0.1")
     }
 }
 pub fn version() -> String {
@@ -70,7 +71,14 @@ impl State {
         State::Verb
     }
 }
-
+///
+/// # Examples
+///
+/// ```
+///    use markdown_scanner::*;
+///    let result = scan("".to_string());
+///    assert_eq!(0, result.len());
+/// ```
 
 pub fn scan(line: String ) -> Vec<Token>  {
     let mut result = Vec::<Token>::new();
